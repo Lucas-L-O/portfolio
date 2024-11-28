@@ -194,7 +194,7 @@ footer {
 }
 
 .parallax {
-    background-image: url('file:///C:/Users/ALUNO/Documents/Lucas%20Lopes/portfolio/img/Banner.png');
+    background-image: url('/img/Banner.png');
     height: 60em;
     width: 100%;
     background-attachment: fixed;
