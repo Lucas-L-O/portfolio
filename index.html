@@ -137,35 +137,50 @@
         <section id="projetos">
             <h1>Projetos</h1>
             <div class="container js-section">
-                <a href="file:///C:/Users/ALUNO/Documents/Lucas%20Lopes/aula01/exercicio01/index.html" target="_blank">
-                    <div class="card">
-                        <div class="card-content">
-                            <h2>Site para uma padaria</h2>
-                            <div class="icons">
-                                <img src="img/icons/html.svg" alt="" width="24" height="24">
-                                <img src="img/icons/css.svg" alt="" width="24" height="24" class="icon">
-                            </div>
+                <div class="card">
+                    <div class="card-content"                         onclick="openModal('https://lucas-l-o.github.io/gse-solucoes-senai/', 'https://github.com/Lucas-L-O/gse-solucoes-senai')">
+                        <h2>Site para loja de material de construção</h2>
+                        <div class="icons">
+                            <img src="img/icons/html.svg" alt="" width="24" height="24">
+                            <img src="img/icons/css.svg" alt="" width="24" height="24" class="icon">
+                            <img src="img/icons/javascript.svg" alt="">
                         </div>
-                        <img class="img-site" src="img/padaria.png" alt="Imagem da padaria">
                     </div>
-                </a>
-                <a href="file:///C:/Users/ALUNO/Documents/Lucas%20Lopes/aula25-10/loja-materiais/index.html" target="_blank">
-                    <div class="card">
-                        <div class="card-content">
-                            <h2>Site para loja de material de construção</h2>
-                            <div class="icons">
-                                <img src="img/icons/html.svg" alt="" width="24" height="24">
-                                <img src="img/icons/css.svg" alt="" width="24" height="24" class="icon">
-                                <img src="img/icons/javascript.svg" alt="">
-                            </div>
+                    <img 
+                        class="img-site" 
+                        src="img/gse-solucoes.png" 
+                        alt="Imagem da loja de materiais de construção"
+                    >
+                </div>
+                <div class="card">
+                    <div class="card-content"                         onclick="openModal('https://lucas-l-o.github.io/jogo-galaga/', 'https://github.com/Lucas-L-O/jogo-galaga')">
+                        <h2>Jogo inspirado no Clássico Galaga</h2>
+                        <div class="icons">
+                            <img src="img/icons/html.svg" alt="" width="24" height="24">
+                            <img src="img/icons/css.svg" alt="" width="24" height="24" class="icon">
+                            <img src="img/icons/javascript.svg" alt="">
                         </div>
-                        <img class="img-site" src="img/gse-solucoes.png" alt="Imagem da loja de materiais de construção">
                     </div>
-                </a>
+                    <img 
+                        class="img-site" 
+                        src="img/jogo-galaga.png" 
+                        alt="Imagem da loja de materiais de construção"
+                    >
+                </div>
             </div>
         </section>
 
-
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <iframe id="modal-iframe" src="" frameborder="0"></iframe>
+                <div class="links">
+                    <a id="modal-site-link" href="#" target="_blank" class="btn">Visitar o site</a>
+                    <a id="modal-repo-link" href="#" target="_blank" class="btn">Ver no GitHub</a>
+                </div>
+            </div>
+        </div>
 
         <section id="contato">
             <h1>Contato</h1>
@@ -238,5 +253,6 @@
 
 </body>
 <script src="js/script.js"></script>
+
 
 </html>
