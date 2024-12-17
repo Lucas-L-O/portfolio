@@ -194,7 +194,7 @@ footer {
 }
 
 .parallax {
-    background-image: url('/img/Banner.png');
+    background-image: url('../img/Banner.png');
     height: 60em;
     width: 100%;
     background-attachment: fixed;
@@ -425,11 +425,12 @@ footer {
     }
   
     .parallax {
-      height: 50em;
+      background-image: url('../img/BannerVertical.png');
+
     }
   
     #habilidades .container .cards {
-      gap: 2.5rem;
+      gap: 1.5rem;
     }
   
     #habilidades .container .cards .box {
@@ -467,7 +468,8 @@ footer {
     }
   
     .parallax {
-      height: 55em;
+      background-size: contain;
+      background-position: top;
     }
   
     #habilidades .container .cards {
@@ -509,7 +511,7 @@ footer {
     }
   
     .parallax {
-      height: 60em;
+      height: calc(100vw * 9 / 16);
     }
   
     #habilidades .container .cards {
